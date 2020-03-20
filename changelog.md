@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.4.1 | 2020-03-20
+* Drop matplotlib < 3 requirement.
+* Add functionality which redirects users to API when accessing particular fields.
+* Add API for markers.
+* Bugfix CorrelatedStack.plot().
+
 ## v0.4.0 | 2020-01-21
 
 * Add calibration data as attribute of force channels (see docs tutorials section: Files and Channels).

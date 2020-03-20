@@ -25,15 +25,6 @@ To see a textual representation of the contents of a file::
     - Export time (ns): 1531162366497820300
     - File format version: 1
 
-    Calibration:
-      1:
-        Force 1x
-        Force 1y
-        Force 2x
-        Force 2y
-        JSON:
-        - Data type: object
-        - Size: 1
     Force HF:
       Force 1x:
       - Data type: float64
@@ -51,10 +42,6 @@ To see a textual representation of the contents of a file::
       Info wave:
       - Data type: uint8
       - Size: 706251
-    Marker:
-      FRAP 3:
-      - Data type: object
-      - Size: 1
     Photon count:
       Blue:
       - Data type: uint32
@@ -65,16 +52,23 @@ To see a textual representation of the contents of a file::
       Red:
       - Data type: uint32
       - Size: 706251
-    Scan:
-      reference:
-      - Data type: object
-      - Size: 1
-      bleach:
-      - Data type: object
-      - Size: 1
-      imaging:
-      - Data type: object
-      - Size: 1
+
+    .scans
+      - reference
+      - bleach
+      - imaging
+
+    .markers:
+      - FRAP 3
+
+    .force1x
+      .calibration
+    .force1y
+      .calibration
+    .force2x
+      .calibration
+    .force2y
+      .calibration
 
 For a listing of more specific timeline items::
 
